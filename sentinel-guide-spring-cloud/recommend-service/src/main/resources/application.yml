@@ -1,0 +1,10 @@
+server:
+  port: 8003
+spring:
+  cloud:
+    sentinel:
+      eager: true
+      transport:
+        dashboard: "localhost:8080"
+  application:
+    name: "recommend-service"
