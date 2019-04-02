@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.alibaba.csp.sentinel.guide.buy;
+package com.alibaba.csp.sentinel.guide.shopping;
 
 import java.util.List;
 
@@ -25,13 +25,13 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Eric Zhao
  */
 @RestController
-public class BuyController {
+public class ShoppingController {
 
     @Autowired
-    private BuyService buyService;
+    private ShoppingService shoppingService;
 
     @GetMapping("/to_buy")
     public List<String> apiGetThingsToBuy() {
-        return buyService.getThingsToBuy();
+        return shoppingService.getThingsToBuy();
     }
 }

@@ -7,4 +7,4 @@ spring:
       transport:
         dashboard: "localhost:8080"
   application:
-    name: "buy-service"
+    name: "shopping-service"

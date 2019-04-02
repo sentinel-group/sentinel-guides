@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.alibaba.csp.sentinel.guide.buy;
+package com.alibaba.csp.sentinel.guide.shopping;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -24,7 +24,7 @@ import org.springframework.web.client.RestTemplate;
  * @author Eric Zhao
  */
 @SpringBootApplication
-public class BuyDemoApplication {
+public class ShoppingDemoApplication {
 
     @Bean
     public RestTemplate restTemplate() {
@@ -32,6 +32,6 @@ public class BuyDemoApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(BuyDemoApplication.class, args);
+        SpringApplication.run(ShoppingDemoApplication.class, args);
     }
 }
