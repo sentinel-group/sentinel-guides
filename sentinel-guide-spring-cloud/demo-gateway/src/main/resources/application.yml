@@ -1,0 +1,29 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: demo-gateway
+  cloud:
+    sentinel:
+      filter:
+        enabled: false
+      transport:
+        dashboard: localhost:8080
+    gateway:
+      enabled: true
+      discovery:
+        locator:
+          lower-case-service-id: true
+      routes:
+        # Add your routes here.
+        - id: foo-service-route
+          uri: http://localhost:9669/
+          predicates:
+            - Path=/demo/**
+        - id: httpbin-route
+          uri: https://httpbin.org
+          predicates:
+            - Path=/httpbin/**
+          filters:
+            - RewritePath=/httpbin/(?<segment>.*), /$\{segment}

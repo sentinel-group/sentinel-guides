@@ -3,20 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>sentinel-guides</artifactId>
+        <artifactId>sentinel-guide-spring-cloud</artifactId>
         <groupId>com.alibaba.csp</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>sentinel-guide-spring-cloud</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>service-api</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
-    <modules>
-        <module>service-api</module>
-        <module>web-api-demo</module>
-        <module>dubbo-provider</module>
-        <module>demo-gateway</module>
-    </modules>
 
 </project>

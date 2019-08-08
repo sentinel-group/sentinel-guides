@@ -11,14 +11,13 @@
 
     <description>Sentinel guideline samples</description>
     <url>https://github.com/sentinel-group/sentinel-guides</url>
+
     <modules>
         <module>sentinel-guide-spring-cloud</module>
     </modules>
 
     <properties>
-        <sentinel.version>1.5.1</sentinel.version>
-        <spring.cloud.alibaba.version>0.2.1.RELEASE</spring.cloud.alibaba.version>
-
+        <sentinel.version>1.6.3</sentinel.version>
         <!-- Test libs -->
         <junit.version>4.12</junit.version>
 
@@ -30,36 +29,6 @@
         <maven.compiler.version>3.8.0</maven.compiler.version>
         <maven.surefire.version>2.22.1</maven.surefire.version>
     </properties>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.alibaba.csp</groupId>
-                <artifactId>sentinel-core</artifactId>
-                <version>${sentinel.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.alibaba.csp</groupId>
-                <artifactId>sentinel-transport-common</artifactId>
-                <version>${sentinel.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.alibaba.csp</groupId>
-                <artifactId>sentinel-annotation-aspectj</artifactId>
-                <version>${sentinel.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.alibaba.csp</groupId>
-                <artifactId>sentinel-parameter-flow-control</artifactId>
-                <version>${sentinel.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
-                <version>${spring.cloud.alibaba.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <plugins>
