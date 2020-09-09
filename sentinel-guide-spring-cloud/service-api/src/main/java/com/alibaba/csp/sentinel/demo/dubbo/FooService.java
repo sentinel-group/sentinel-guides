@@ -7,5 +7,5 @@ public interface FooService {
 
     String sayHello(String name);
 
-    long getCurrentTime();
+    long getCurrentTime(boolean slow);
 }

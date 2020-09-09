@@ -1,9 +1,6 @@
 package com.alibaba.csp.sentinel.demo.service;
 
-import java.util.concurrent.ThreadLocalRandom;
-
 import com.alibaba.csp.sentinel.demo.dubbo.FooService;
-import com.alibaba.csp.sentinel.util.TimeUtil;
 
 import org.apache.dubbo.config.annotation.Service;
 
@@ -19,15 +16,14 @@ public class FooServiceImpl implements FooService {
     }
 
     @Override
-    public long getCurrentTime() {
+    public long getCurrentTime(boolean slow) {
         // Simulate slow invocations randomly.
-        if (ThreadLocalRandom.current().nextInt(0, 100) > 70) {
+        if (slow) {
             try {
                 Thread.sleep(300);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            } catch (InterruptedException ignored) {
             }
         }
-        return TimeUtil.currentTimeMillis();
+        return System.currentTimeMillis();
     }
 }
