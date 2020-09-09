@@ -6,8 +6,6 @@ spring:
     name: demo-gateway
   cloud:
     sentinel:
-      filter:
-        enabled: false
       transport:
         dashboard: localhost:8080
     gateway:

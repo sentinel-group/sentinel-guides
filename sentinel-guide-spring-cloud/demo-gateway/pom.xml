@@ -16,18 +16,18 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
-            <version>2.1.1.RELEASE</version>
+            <version>2.2.2.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
-            <version>2.1.0.RELEASE</version>
+            <version>2.2.1.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-alibaba-sentinel-gateway</artifactId>
-            <version>2.1.0.RELEASE</version>
+            <version>2.2.1.RELEASE</version>
         </dependency>
     </dependencies>
 

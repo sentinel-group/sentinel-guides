@@ -12,6 +12,10 @@
     <artifactId>sentinel-guide-spring-cloud</artifactId>
     <packaging>pom</packaging>
 
+    <properties>
+        <spring.boot.version>2.2.9.RELEASE</spring.boot.version>
+    </properties>
+
     <modules>
         <module>service-api</module>
         <module>web-api-demo</module>

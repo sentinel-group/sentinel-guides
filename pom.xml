@@ -17,7 +17,7 @@
     </modules>
 
     <properties>
-        <sentinel.version>1.6.3</sentinel.version>
+        <sentinel.version>1.7.1</sentinel.version>
         <!-- Test libs -->
         <junit.version>4.12</junit.version>
 
@@ -26,7 +26,7 @@
         <java.source.version>1.8</java.source.version>
         <java.target.version>1.8</java.target.version>
         <java.encoding>UTF-8</java.encoding>
-        <maven.compiler.version>3.8.0</maven.compiler.version>
+        <maven.compiler.version>3.8.1</maven.compiler.version>
         <maven.surefire.version>2.22.1</maven.surefire.version>
     </properties>
 
