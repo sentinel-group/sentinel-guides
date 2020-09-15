@@ -7,6 +7,7 @@ import org.apache.dubbo.config.annotation.Reference;
 import org.apache.dubbo.config.spring.context.annotation.DubboComponentScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -30,8 +31,8 @@ public class DemoController {
         return fooService.sayHello(name);
     }
 
-    @GetMapping("/bonjour")
-    public String apiSayHelloLocal(@RequestParam String name) {
+    @GetMapping("/bonjour/{name}")
+    public String apiSayHelloLocal(@PathVariable String name) {
         return demoService.bonjour(name);
     }
 
