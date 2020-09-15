@@ -17,7 +17,7 @@
     </modules>
 
     <properties>
-        <sentinel.version>1.7.1</sentinel.version>
+        <sentinel.version>1.8.0</sentinel.version>
         <!-- Test libs -->
         <junit.version>4.12</junit.version>
 
